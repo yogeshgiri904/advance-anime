@@ -1,0 +1,349 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+.header
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo
+{
+    width: 150px;
+    cursor: pointer;
+}
+.nav
+{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.button
+{
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1.5px solid white;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+.button:hover
+{
+    background-color: white;
+    color: black;
+}
+.main
+{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%,-50%);
+}
+.main h2
+          {
+              font-size: 2rem;
+          }
+          .main h2 span
+          {
+            font-size: 4rem;
+              display: inline-flex;
+              color: greenyellow;
+              margin-bottom: 2;
+          }
+          .main h2 span:nth-child(even)
+          {
+              overflow: hidden;
+              transition: ease-in-out .5s;
+              color: white;
+              border-bottom: 5px solid greenyellow;
+              letter-spacing: -1em;
+          }
+          .main h2:hover span:nth-child(even)
+          {
+              letter-spacing: 0em;
+          }
+          .main h2:hover span:nth-child(2)
+          {
+              transition-delay: 0s;
+          }
+          .main h2:hover span:nth-child(4)
+          {
+              transition-delay: .5s;
+          }
+          .main h2:hover span:nth-child(6)
+          {
+              transition-delay: 1s;
+          }
+.sidebar
+{
+    z-index: 5;
+    width: 60px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.600);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .5s;
+
+}
+.menubar
+{
+    z-index: 2;
+    width: 0px;
+    max-width: 500px;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.900);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden ;
+    transition: all .5s;
+}
+.menubar .logo
+{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.links
+{
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-0%,-50%);
+    height: 70%;
+    width: 60%;
+}
+.linkbar a
+{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+.linkbar .fa
+{
+    margin-right: 5px;
+}
+.linkbar a:hover
+{
+    opacity: 0.6;
+}
+.links .button
+{
+    margin-top: 20px;
+    float: right;
+
+}
+.btn
+{
+    display: block;
+    width: 25px;
+    margin: 50px auto;
+    cursor: pointer;
+    border: 2px solid grey;
+    background: transparent;
+    border-radius: 100px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+
+}
+#closebtn
+{
+    display: none;
+}
+.icon
+{
+    width: 40px;
+    margin: 5px auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.icon:hover
+{
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+.icon1
+{
+    position: absolute;
+    top: 28%;
+    transform: translate(0,50%);
+    text-align: center;
+}
+.icon2
+{
+    position: absolute;
+    top: 75%;
+    transform: translate(0,50%);
+    text-align: center;
+}
+.bubble
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -50px;}
+.bubble img
+{
+    width: 40px;
+    animation: sea 7s infinite;
+}
+@keyframes sea
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubble img:nth-child(1)
+{
+    animation-delay: 3s;
+    width: 40px;
+}
+.bubble img:nth-child(2)
+{
+    animation-delay: 1s;
+    width: 30px;
+}
+.bubble img:nth-child(3)
+{
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubble img:nth-child(4)
+{
+    animation-delay: 4s;
+    width: 30px;
+}
+.bubble img:nth-child(5)
+{
+    animation-delay: 7s;
+    width: 50px;
+}
+.bubble img:nth-child(6)
+{
+    animation-delay: 5s;
+    width: 20px;
+}
+.bubble img:nth-child(7)
+{
+    animation-delay: 6s;
+    width: 40px;
+}
+.bubble img:nth-child(8)
+{
+    animation-delay: 4s;
+    width: 10px;
+}
+.bubble img:nth-child(9)
+{
+    animation-delay: 3s;
+    width: 30px;
+}
+
+@media(max-width:720px)
+{
+    *
+    {
+        font-size: 8px;
+    }
+    .logo
+    {
+        width: 120px;
+    }
+    .main h1
+    {
+        line-height: 60px;
+    }
+    .main h2 span:nth-child(even)
+    {
+        border-bottom: 4px solid greenyellow;
+    }
+    .main
+    {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(0%,-50%);
+    }
+    .sidebar
+    {
+        width: 40px;
+    }
+    .menu
+    {
+        width: 15px;
+    }
+    .btn
+    {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        border: 1.5px solid grey;
+    }
+    .icon
+    {
+        width: 25px;
+    }
+    .icon1
+    {
+        position: absolute;
+        top: 35%;
+        transform: translate(0,50%);
+        text-align: center;
+    }
+    .bubble img:nth-child(1)
+    {
+        z-index: -1;
+    }
+    .linkbar a
+    {
+        font-size: 12px;
+        line-height: 40px;
+    }
+
+    
+
+}
