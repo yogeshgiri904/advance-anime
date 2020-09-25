@@ -110,7 +110,7 @@
     max-width: 500px;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.900);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     overflow: hidden ;
@@ -170,7 +170,11 @@
     width: 40px;
     height: 40px;
     font-size: 20px;
-
+    transition: 0.4s;
+}
+.btn:hover
+{
+    transform: scale(1.1);
 }
 #closebtn
 {
@@ -286,7 +290,7 @@
 {
     *
     {
-        font-size: 8px;
+        font-size: 10px;
     }
     .logo
     {
@@ -321,7 +325,7 @@
         width: 25px;
         height: 25px;
         font-size: 14px;
-        border: 1.5px solid grey;
+        border: 1px solid grey;
     }
     .icon
     {

@@ -1,19 +1,21 @@
+*
+{
+    outline: none;
+}
 body
 {
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    font-family: "Raleway";
+    background: linear-gradient(to bottom right, magenta,  rebeccapurple );
 }
-
 .contactbox
 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 30%;
+    height: 400px;
 }
-
 .logo img
 {
     width: 200px;
@@ -22,34 +24,16 @@ body
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
-
-.contact
-{
-    position: absolute;
-    position: relative;
-    top: -90px;  
-    height: 300px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color:transparent;
-    color:white;
-    padding: 25px;
-    margin: 30px;
-
-}
-@font-face 
-{
-    font-family:rali;
-    src: url(../font/Raleway-Light.ttf);
-}
-
 h3
 {
     font-size: 32px;
     font-weight: bold;
-    font-family: Rali;
     color:black;
+    text-align: center;
+}
+::placeholder
+{
+    color: black;
 }
 
 .contact input
@@ -62,7 +46,7 @@ h3
     color: black;
     font-size: 15px;
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -75,7 +59,7 @@ h3
     color: black;
     font-size: 15px;
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -87,28 +71,53 @@ h3
     color: black;
     font-size: 15px;
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .contact input[type="submit"]
 {
-    border: 1.5px solid black;
-    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    border-radius: 2px;
+    border: 1px solid seagreen;
+    color: seagreen;
     height: 35px;
     font-size: 15px ;
-    color:black;
-    width: 20%;
     margin-top: 30px;
-    margin-left: 30%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: 0.3s;
+    transition: 0.4s;
+    cursor: pointer;
+    font-family: "Raleway";
+    cursor: pointer;
+}
+.contact input[type="submit"]:hover
+{
+    background-color: greenyellow;
+    color: black;
 
 }
 
-.contact input[type="submit"]:hover
+
+@media(max-width:720px)
 {
-    cursor: pointer;
-    background-color:  black;
-    color: white;
+    .contactbox
+    {
+        width: 80%;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
+    .contact input[type="submit"]
+    {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    }
+
 }
